@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VORYN | Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="assets/logo-black.png" alt="VORYN">
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="account.html">Account</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+
+    <div class="menu-btn">☰</div>
+  </header>
+
+  <!-- Cart -->
+  <section class="cart-page">
+
+    <div class="cart-left">
+      <h1>Your Cart</h1>
+
+      <div id="cartItems"></div>
+    </div>
+
+    <div class="cart-right">
+      <h2>Order Summary</h2>
+
+      <div class="line">
+        <span>Subtotal</span>
+        <span>$184</span>
+      </div>
+
+      <div class="line">
+        <span>Shipping</span>
+        <span>DT8</span>
+      </div>
+
+      <div class="line total">
+        <span>Total</span>
+        <span>$196</span>
+      </div>
+
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>

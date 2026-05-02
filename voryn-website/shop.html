@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VORYN | Shop</title>
+  <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="assets/logo-black.png" alt="VORYN">
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="account.html">Account</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+
+    <div class="menu-btn">☰</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="shop-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <p>VORYN COLLECTION</p>
+      <h1>Quiet Luxury Essentials</h1>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="hoodie">Hoodies</button>
+    <button class="filter-btn" data-filter="halfzip">Half Zip</button>
+  </section>
+
+  <!-- Products -->
+  <section class="shop-products">
+
+    <a href="product.html?id=1" class="product-card hoodie">
+      <img src="assets/hoodie1.png" alt="">
+      <h3>Signature Hoodie</h3>
+      <p>$89</p>
+    </a>
+
+    <a href="product.html?id=2" class="product-card hoodie">
+      <img src="assets/hoodie2.png" alt="">
+      <h3>Crest Hoodie</h3>
+      <p>$92</p>
+    </a>
+
+    <a href="product.html?id=3" class="product-card halfzip">
+      <img src="assets/halfzip1.png" alt="">
+      <h3>Elite Half Zip</h3>
+      <p>$95</p>
+    </a>
+
+    <a href="product.html?id=4" class="product-card hoodie">
+      <img src="assets/hoodie1.png" alt="">
+      <h3>Monarch Hoodie</h3>
+      <p>$99</p>
+    </a>
+
+    <a href="product.html?id=5" class="product-card halfzip">
+      <img src="assets/halfzip1.png" alt="">
+      <h3>Prestige Half Zip</h3>
+      <p>$98</p>
+    </a>
+
+    <a href="product.html?id=6" class="product-card hoodie">
+      <img src="assets/hoodie2.png" alt="">
+      <h3>Royal Crest Hoodie</h3>
+      <p>$94</p>
+    </a>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 VORYN — Luxury Redefined.</p>
+  </footer>
+
+  <script src="shop.js"></script>
+</body>
+</html>

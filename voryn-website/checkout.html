@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VORYN | Checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    <img src="assets/logo-black.png" alt="VORYN">
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="account.html">Account</a>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+
+  <div class="menu-btn">☰</div>
+</header>
+
+<section class="checkout-page">
+
+  <div class="checkout-left">
+    <h1>Checkout</h1>
+
+    <form>
+
+      <h3>Customer Information</h3>
+
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <h3>Shipping Address</h3>
+
+      <input type="text" placeholder="Country" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="Street Address" required>
+      <input type="text" placeholder="Postal Code" required>
+
+      <h3>Payment</h3>
+
+      <input type="text" placeholder="Card Holder Name" required>
+      <input type="text" placeholder="Card Number" required>
+      <div class="double">
+        <input type="text" placeholder="MM/YY" required>
+        <input type="text" placeholder="CVV" required>
+      </div>
+
+      <a href="success.html" class="place-order">Place Order</a>
+
+    </form>
+  </div>
+
+  <div class="checkout-right">
+    <h2>Order Summary</h2>
+
+    <div id="summaryItems"></div>
+
+    <div class="line">
+      <span>Shipping</span>
+      <span id="shipping">8DT</span>
+    </div>
+
+    <div class="line total">
+      <span>Total</span>
+      <span id="checkoutTotal">DT0</span>
+    </div>
+  </div>
+
+</section>
+
+<script type="module" src="checkout.js"></script>
+</body>
+</html>

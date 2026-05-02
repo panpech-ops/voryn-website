@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VORYN | Product</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="assets/logo-black.png" alt="VORYN">
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="account.html">Account</a>
+      <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+    </nav>
+
+    <div class="menu-btn">☰</div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-page">
+
+    <div class="product-image">
+      <img src="assets/hoodie1.png" alt="VORYN Hoodie">
+    </div>
+
+    <div class="product-info">
+      <p class="mini">VORYN WINTER DROP</p>
+      <h1>Signature Hoodie</h1>
+      <h2>$89</h2>
+
+      <p class="desc">
+        Crafted from heavyweight premium cotton with a timeless oversized fit.
+        Designed for silent confidence and everyday luxury.
+      </p>
+
+      <div class="sizes">
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+      </div>
+
+      <div class="qty-box">
+        <button id="minus">-</button>
+        <span id="qty">1</span>
+        <button id="plus">+</button>
+      </div>
+
+      <button 
+        class="add-cart"
+        data-name="Signature Hoodie"
+        data-price="89"
+        data-image="assets/hoodie1.jpg">
+        Add To Cart
+      </button>
+      <a href="checkout.html" class="buy-now">Buy Now</a>
+
+    </div>
+
+  </section>
+
+  <!-- Related -->
+  <section class="related">
+    <h2>You May Also Like</h2>
+
+    <div class="related-grid">
+
+      <a href="shop.html" class="r-card">
+        <img src="assets/hoodie2.png" alt="">
+        <h3>Crest Hoodie</h3>
+        <p>$92</p>
+      </a>
+
+      <a href="shop.html" class="r-card">
+        <img src="assets/halfzip1.png" alt="">
+        <h3>Elite Half Zip</h3>
+        <p>$95</p>
+      </a>
+
+    </div>
+  </section>
+
+  <script src="product.js"></script>
+</body>
+</html>
